@@ -1,0 +1,15 @@
+django
+psycopg2-binary
+djangorestframework-jsonapi
+django-filter
+django-cors-headers
+djangorestframework
+djangorestframework-jsonapi
+django-filter
+jsonfield
+gunicorn
+torch
+transformers
+accelerate
+sentencepiece
+xformers
