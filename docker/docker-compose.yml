@@ -1,0 +1,12 @@
+version: "3"
+services:
+  emotions-api:
+    image: emotions-api
+    ports:
+      - "80:80"
+    environment: 
+      - env=prod
+    volumes:
+      - ../:/opt/emotions-api
+    working_dir: /opt/emotions-api
+    command: 'gunicorn emotions_api.wsgi:application -c gunicorn.conf.py'
