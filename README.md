@@ -10,11 +10,11 @@ Before using the API, make sure you have the following installed:
 
 ## Getting Started
 
-1. Clone the repository to your local machine:
-2. Change to the project directory:
-3. Build and run the Docker container:
-
-4. The API will now be accessible at `http://localhost:8000/`.
+1. Clone the repository to your local machine: https://github.com/luiscostalf/emotions-api.git
+2. Change to the project directory: cd /emotions-api/docker
+3. Build the Docker container: docker build . -t emotions-api
+4. Run the Docker container: docker-compose up
+5. The API will now be accessible at `http://localhost:8000/`.
 
 ## Endpoints
 
