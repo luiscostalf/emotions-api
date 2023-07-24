@@ -11,7 +11,7 @@ class EmotionsSingletonClass:
         if self._instance is not None:
             raise Exception("This class is a singleton and cannot be instantiated directly.")
         self.data = "Singleton Data"
-        #self.T5 = pipeline("text2text-generation", model="google/flan-t5-base",device_map="auto")
+        self.T5 = pipeline("text2text-generation", model="google/flan-t5-base",device_map="auto")
         self.roberta = pipeline("text-classification", model="SamLowe/roberta-base-go_emotions",top_k=None,device_map="auto")
         self.Twitter = pipeline("text-classification", model="cardiffnlp/twitter-roberta-base-irony",top_k=None,device_map="auto")
         self.twitterSent = pipeline("text-classification",model="cardiffnlp/twitter-roberta-base-sentiment-latest",top_k=None,device_map="auto")
